@@ -150,12 +150,12 @@ function AccountInfo({
                 ██
               </span>
               <span>
-                Following
+                United
                 <br />
                 ██
               </span>
               <span>
-                Followers
+                Tribe
                 <br />
                 ██
               </span>
@@ -321,13 +321,13 @@ function AccountInfo({
                   <span title={followersCount}>
                     {shortenNumber(followersCount)}
                   </span>{' '}
-                  Followers
+                  United
                 </div>
                 <div class="insignificant">
                   <span title={followingCount}>
                     {shortenNumber(followingCount)}
                   </span>{' '}
-                  Following
+                  Tribe
                   <br />
                 </div>
                 {standalone ? (
@@ -501,7 +501,7 @@ function RelatedActions({ info, instance, authenticated }) {
       >
         <div class="shazam-container-inner">
           <p>
-            Followed by{' '}
+            United with{' '}
             <span class="ib">
               {familiarFollowers.map((follower) => (
                 <a
@@ -530,7 +530,7 @@ function RelatedActions({ info, instance, authenticated }) {
       <p class="actions">
         <span>
           {followedBy ? (
-            <span class="tag">Following you</span>
+            <span class="tag">United with you</span>
           ) : !!lastStatusAt ? (
             <small class="insignificant">
               Last post:{' '}
@@ -859,8 +859,8 @@ function RelatedActions({ info, instance, authenticated }) {
               >
                 {following ? (
                   <>
-                    <span>Following</span>
-                    <span>Unfollow…</span>
+                    <span>Tribe</span>
+                    <span>Divide…</span>
                   </>
                 ) : requested ? (
                   <>
@@ -869,7 +869,7 @@ function RelatedActions({ info, instance, authenticated }) {
                   </>
                 ) : locked ? (
                   <>
-                    <Icon icon="lock" /> <span>Follow</span>
+                    <Icon icon="lock" /> <span>Unite</span>
                   </>
                 ) : (
                   'Follow'

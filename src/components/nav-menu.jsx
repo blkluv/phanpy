@@ -170,7 +170,7 @@ function NavMenu(props) {
                 <Icon icon="bookmark" size="l" /> <span>Bookmarks</span>
               </MenuLink>
               <MenuLink to="/f">
-                <Icon icon="heart" size="l" /> <span>Favourites</span>
+                <Icon icon="heart" size="l" /> <span>Luvs</span>
               </MenuLink>
             </>
           )}
@@ -182,7 +182,7 @@ function NavMenu(props) {
             <Icon icon="group" size="l" /> <span>Local</span>
           </MenuLink>
           <MenuLink to={`/${instance}/p`}>
-            <Icon icon="earth" size="l" /> <span>Federated</span>
+            <Icon icon="earth" size="l" /> <span>Earth</span>
           </MenuLink>
           <MenuLink to={`/${instance}/trending`}>
             <Icon icon="chart" size="l" /> <span>Trending</span>

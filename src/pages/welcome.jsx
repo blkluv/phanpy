@@ -27,7 +27,7 @@ function Welcome() {
               marginBlockEnd: -16,
             }}
           />
-          <img src={logoText} alt="Phanpy" width="250" />
+          <img src={logoText} alt="LUV NFT" width="250" />
         </h1>
         <p>
           <big>
@@ -38,7 +38,7 @@ function Welcome() {
             </b>
           </big>
         </p>
-        <p class="desc">A minimalistic opinionated Mastodon web client.</p>
+        <p class="desc">A positive vibes only social media platform.</p>
       </div>
       <div id="why-container">
         <div class="sections">
@@ -99,23 +99,23 @@ function Welcome() {
       </div>
       <hr />
       <p>
-        <a href="https://github.com/cheeaun/phanpy" target="_blank">
-          Built
+        <a href="https://luvnft.com" target="_blank">
+          Created
         </a>{' '}
         by{' '}
         <a
-          href="https://mastodon.social/@cheeaun"
+          href="https://universeodon.com/@luv"
           target="_blank"
           onClick={(e) => {
             e.preventDefault();
-            states.showAccount = 'cheeaun@mastodon.social';
+            states.showAccount = 'luv@universeodon.com';
           }}
         >
-          @cheeaun
+          @luv
         </a>
         .{' '}
         <a
-          href="https://github.com/cheeaun/phanpy/blob/main/PRIVACY.MD"
+          href="https://github.com/blkluv/phanpy/blob/main/PRIVACY.MD"
           target="_blank"
         >
           Privacy Policy
