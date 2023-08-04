@@ -144,7 +144,7 @@ function Login() {
         <Loader hidden={uiState !== 'loading'} />
         <hr />
         <p>
-          <a href="https://joinmastodon.org/servers" target="_blank">
+          <a href="https://universeodon.com/" target="_blank">
             Don't have an account? Create one!
           </a>
         </p>
