@@ -145,7 +145,7 @@ function Login() {
         <hr />
         <p>
           <a href="https://universeodon.com/" target="_blank">
-            Don't have an account? Create one!
+            Don't have an account? Create one! Then Login.
           </a>
         </p>
         <p>
