@@ -219,6 +219,13 @@ function NavMenu(props) {
               >
                 <Icon icon="gear" size="l" /> <span>Settings&hellip;</span>
               </MenuItem>
+              <MenuItem
+            onClick={() => {
+              window.open('https://hq.decent.xyz/137/Editions/0x6Ea2431636B7fB013C995cF846a9C761e535644B', '_blank'); // Replace with your external link URL
+            }}
+          >
+            <Icon icon="external-link" size="l" /> <span>LUVR NFT</span>
+          </MenuItem>
             </>
           ) : (
             <>
