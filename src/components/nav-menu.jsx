@@ -9,7 +9,7 @@ import { api } from '../utils/api';
 import safeBoundingBoxPadding from '../utils/safe-bounding-box-padding';
 import states from '../utils/states';
 import store from '../utils/store';
-
+import Emoji from "react-emoji-render";
 import Avatar from './avatar';
 import Icon from './icon';
 import MenuLink from './menu-link';
@@ -224,7 +224,14 @@ function NavMenu(props) {
               window.open('https://hq.decent.xyz/137/Editions/0x6Ea2431636B7fB013C995cF846a9C761e535644B', '_blank'); // Replace with your external link URL
             }}
           >
-            <Icon icon="external-link" size="l" /> <span>LUVR NFT</span>
+            <span><Emoji text="❤️" />LUVR NFT</span>
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              window.open('https://emojitarot.luvnft.com/', '_blank'); // Replace with your external link URL
+            }}
+          >
+            <span><Emoji text="🃏" />Emoji Tarot</span>
           </MenuItem>
             </>
           ) : (
