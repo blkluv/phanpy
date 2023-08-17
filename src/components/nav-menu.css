@@ -4,10 +4,12 @@
     padding: 0;
     width: 22em;
   }
+
   .nav-menu section {
     padding: 8px 0;
     width: 50%;
   }
+
   @keyframes phanpying {
     0% {
       background-position: 0 0, 0 0, 3em 85%;
@@ -16,17 +18,14 @@
       background-position: 0 0, 0 0, 2em 90%;
     }
   }
+
   .nav-menu section:last-child {
     background-color: var(--bg-faded-color);
-    background-image: linear-gradient(
-        to right,
-        var(--divider-color) 1px,
-        transparent 1px
-      ),
+    background-image: 
+      linear-gradient(to right, var(--divider-color) 1px, transparent 1px),
       linear-gradient(to bottom left, var(--bg-blur-color), transparent),
       url(../assets/phanpy-bg.svg);
     background-repeat: no-repeat;
-    /* background-size: auto, auto, 200%; */
     background-position: 0 0, 0 0, 2em 90%;
     background-blend-mode: normal, normal, overlay;
     box-shadow: inset 0 0 1px var(--bg-color);
@@ -34,9 +33,11 @@
     top: 0;
     animation: phanpying 0.2s ease-in-out both;
   }
+
   .nav-menu section:last-child > .szh-menu__divider:first-child {
     display: none;
   }
+
   .nav-menu .szh-menu__item span {
     white-space: normal;
   }
