@@ -233,6 +233,13 @@ function NavMenu(props) {
           >
             <span><Emoji text="🃏" />Emoji Tarot</span>
           </MenuItem>
+          <MenuItem
+            onClick={() => {
+              window.open('https://cats.luvnft.com/', '_blank'); // Replace with your external link URL
+            }}
+          >
+            <span><Emoji text="😻" />Adopt Cats</span>
+          </MenuItem>
             </>
           ) : (
             <>
