@@ -228,6 +228,13 @@ function NavMenu(props) {
           </MenuItem>
           <MenuItem
             onClick={() => {
+              window.open('https://verified.luvnft.com/', '_blank'); // Replace with your external link URL
+            }}
+          >
+            <span><Emoji text="🔵" />Blue Check</span>
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
               window.open('https://emojitarot.luvnft.com/', '_blank'); // Replace with your external link URL
             }}
           >
