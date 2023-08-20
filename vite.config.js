@@ -107,8 +107,7 @@ export default defineConfig({
           return 'assets/[name]-[hash].js';
         },
       },
-    },
-    rollupOptions: {
+      // Add the "external" option here
       external: [
         'next/image', // Add next/image to the list of external dependencies
       ],
