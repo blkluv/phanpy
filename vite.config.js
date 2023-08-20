@@ -107,10 +107,6 @@ export default defineConfig({
           return 'assets/[name]-[hash].js';
         },
       },
-      // Add the "external" option here
-      external: [
-        'next/image', // Add next/image to the list of external dependencies
-      ],
     },
   },
 });

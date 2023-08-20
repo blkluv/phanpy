@@ -88,7 +88,7 @@ function Login() {
       <form onSubmit={onSubmit}>
         <h1>Log in</h1>
         <label>
-          <p>[universeodon.com] Instance</p>
+          <p>Instance</p>
           <input
             value={instanceText}
             required
@@ -138,14 +138,14 @@ function Login() {
         )}
         <div>
           <button class="large" disabled={uiState === 'loading'}>
-            Log in and follow @luv
+            Log in
           </button>{' '}
         </div>
         <Loader hidden={uiState !== 'loading'} />
         <hr />
         <p>
-          <a href="https://universeodon.com/" target="_blank">
-            Don't have an account? Create one! Then Login.
+          <a href="https://joinmastodon.org/servers" target="_blank">
+            Don't have an account? Create one! Join universodon.com instance and follow @luv
           </a>
         </p>
         <p>

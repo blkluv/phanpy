@@ -216,7 +216,7 @@ function NotificationsMenu({ anchorRef, state, onClose }) {
           {hasFollowRequests ? (
             <>
               <span class="tag collapsed">New</span>{' '}
-              <span>Unite Requests</span>
+              <span>Follow Requests</span>
             </>
           ) : (
             <b>See all</b>

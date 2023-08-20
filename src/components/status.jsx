@@ -575,7 +575,7 @@ function Status({
         <MenuItem onClick={() => setShowReactions(true)}>
           <Icon icon="react" />
           <span>
-            Boosted/Luvd by<span class="more-insignificant">…</span>
+            Boosted/Favourited by<span class="more-insignificant">…</span>
           </span>
         </MenuItem>
       )}

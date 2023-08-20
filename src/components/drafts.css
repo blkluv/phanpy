@@ -78,14 +78,14 @@ button.draft-item:is(:hover, :focus) {
 .mini-draft-status {
   text-overflow: ellipsis;
   overflow: hidden;
-  display: flex;
-  -webkit-box-orient: vertical; /* Remove these lines */
-  box-orient: vertical;         /* Remove these lines */
-  -webkit-line-clamp: 2;       /* Remove these lines */
-  line-clamp: 2;               /* Remove these lines */
-  line-height: 1.1;            /* Remove these lines */
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  line-height: 1.1;
 }
-
 .mini-draft-spoiler + .mini-draft-status {
   border-top: 1px dashed var(--text-insignificant-color);
   padding-top: 4px;

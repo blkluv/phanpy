@@ -9,7 +9,7 @@ import { api } from '../utils/api';
 import safeBoundingBoxPadding from '../utils/safe-bounding-box-padding';
 import states from '../utils/states';
 import store from '../utils/store';
-import Emoji from "react-emoji-render";
+
 import Avatar from './avatar';
 import Icon from './icon';
 import MenuLink from './menu-link';
@@ -170,7 +170,7 @@ function NavMenu(props) {
                 <Icon icon="bookmark" size="l" /> <span>Bookmarks</span>
               </MenuLink>
               <MenuLink to="/f">
-                <Icon icon="heart" size="l" /> <span>Luvs</span>
+                <Icon icon="heart" size="l" /> <span>Favourites</span>
               </MenuLink>
             </>
           )}
@@ -182,7 +182,7 @@ function NavMenu(props) {
             <Icon icon="group" size="l" /> <span>Local</span>
           </MenuLink>
           <MenuLink to={`/${instance}/p`}>
-            <Icon icon="earth" size="l" /> <span>Earth</span>
+            <Icon icon="earth" size="l" /> <span>Federated</span>
           </MenuLink>
           <MenuLink to={`/${instance}/trending`}>
             <Icon icon="chart" size="l" /> <span>Trending</span>
@@ -219,41 +219,6 @@ function NavMenu(props) {
               >
                 <Icon icon="gear" size="l" /> <span>Settings&hellip;</span>
               </MenuItem>
-              <MenuItem
-            onClick={() => {
-              window.open('https://hq.decent.xyz/137/Editions/0x6Ea2431636B7fB013C995cF846a9C761e535644B', '_blank'); // Replace with your external link URL
-            }}
-          >
-            <span><Emoji text="#😍❤️💬" />LUVR</span>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              window.open('https://verified.luvnft.com/', '_blank'); // Replace with your external link URL
-            }}
-          >
-            <span><Emoji text="#🔵✔️💙" />Blue Check</span>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              window.open('https://verified.luvnft.com/', '_blank'); // Replace with your external link URL
-            }}
-          >
-            <span><Emoji text="#🟧☮️🆔" />Unity ID</span>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              window.open('https://emojitarot.luvnft.com/', '_blank'); // Replace with your external link URL
-            }}
-          >
-            <span><Emoji text="#🃏🪬🔮" />Emoji Tarot</span>
-          </MenuItem>
-          <MenuItem
-            onClick={() => {
-              window.open('https://cats.luvnft.com/', '_blank'); // Replace with your external link URL
-            }}
-          >
-            <span><Emoji text="#😻🥷🏼🏠" />Adopt Cats</span>
-          </MenuItem>
             </>
           ) : (
             <>

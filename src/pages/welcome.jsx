@@ -1,50 +1,47 @@
 import './welcome.css';
-import { Fragment } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+
 import boostsCarouselUrl from '../assets/features/boosts-carousel.jpg';
-import luvr from '../assets/features/luvr.png';
-import blue from '../assets/features/blue.png';
 import groupedNotificationsUrl from '../assets/features/grouped-notifications.jpg';
 import multiColumnUrl from '../assets/features/multi-column.jpg';
 import multiHashtagTimelineUrl from '../assets/features/multi-hashtag-timeline.jpg';
 import nestedCommentsThreadUrl from '../assets/features/nested-comments-thread.jpg';
 import logoText from '../assets/logo-text.svg';
 import logo from '../assets/logo.svg';
+import Link from '../components/link';
+import states from '../utils/states';
 import useTitle from '../utils/useTitle';
 
 function Welcome() {
   useTitle(null, ['/', '/welcome']);
-  
   return (
     <main id="welcome">
-      <div className="hero-container">
+      <div class="hero-container">
         <h1>
-          <Image
+          <img
             src={logo}
             alt=""
-            width={200}
-            height={200}
+            width="200"
+            height="200"
             style={{
               aspectRatio: '1/1',
               marginBlockEnd: -16,
             }}
           />
-          <Image src={logoText} alt="LUV NFT" width={250} />
+          <img src={logoText} alt="Phanpy" width="250" />
         </h1>
         <p>
           <big>
             <b>
-              <Link href="/login">
-                <a className="button">Log in</a>
+              <Link to="/login" class="button">
+                Log in
               </Link>
             </b>
           </big>
         </p>
-        <p className="desc">A positive vibes only social media play-to-earn tokenopoly game.</p>
+        <p class="desc">A positive vibes only social media donate-to-earn tokenopoly game. </p>
       </div>
       <div id="why-container">
-        <div className="sections">
+        <div class="sections">
           <section>
             <img
               src={boostsCarouselUrl}
@@ -102,26 +99,24 @@ function Welcome() {
       </div>
       <hr />
       <p>
-        <a href="https://luvnft.com" target="_blank" rel="noopener noreferrer">
-          Created
+        <a href="https://github.com/cheeaun/phanpy" target="_blank">
+          Built
         </a>{' '}
         by{' '}
         <a
-          href="https://universeodon.com/@luv"
+          href="https://mastodon.social/@cheeaun"
           target="_blank"
-          rel="noopener noreferrer"
           onClick={(e) => {
             e.preventDefault();
-            states.showAccount = 'luv@universeodon.com';
+            states.showAccount = 'cheeaun@mastodon.social';
           }}
         >
-          @luv
+          @cheeaun
         </a>
         .{' '}
         <a
-          href="https://github.com/blkluv/phanpy/blob/main/PRIVACY.MD"
+          href="https://github.com/cheeaun/phanpy/blob/main/PRIVACY.MD"
           target="_blank"
-          rel="noopener noreferrer"
         >
           Privacy Policy
         </a>

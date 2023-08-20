@@ -290,10 +290,10 @@ function Notifications() {
         )}
         {followRequests.length > 0 && (
           <div class="follow-requests">
-            <h2 class="timeline-header">Unite requests</h2>
+            <h2 class="timeline-header">Follow requests</h2>
             {followRequests.length > 5 ? (
               <details>
-                <summary>{followRequests.length} unite requests</summary>
+                <summary>{followRequests.length} follow requests</summary>
                 <ul>
                   {followRequests.map((account) => (
                     <li key={account.id}>

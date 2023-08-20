@@ -200,7 +200,7 @@ function Settings({ onClose }) {
                 >
                   <option value="public">Public</option>
                   <option value="unlisted">Unlisted</option>
-                  <option value="private">Tribe only</option>
+                  <option value="private">Followers only</option>
                 </select>
               </div>
             </li>
@@ -415,37 +415,37 @@ function Settings({ onClose }) {
               }}
             />
             <div>
-              <b>LUV NFT</b>{' '}
+              <b>Phanpy</b>{' '}
               <a
-                href="https://universeodon.com/@luv"
+                href="https://hachyderm.io/@phanpy"
                 // target="_blank"
                 onClick={(e) => {
                   e.preventDefault();
-                  states.showAccount = 'luv@universeodon.com';
+                  states.showAccount = 'phanpy@hachyderm.io';
                 }}
               >
-                @luv
+                @phanpy
               </a>
               <br />
-              <a href="https://luvnft.com" target="_blank">
+              <a href="https://github.com/cheeaun/phanpy" target="_blank">
                 Built
               </a>{' '}
               by{' '}
               <a
-                href="https://instagram.com/hahzcandy"
+                href="https://mastodon.social/@cheeaun"
                 // target="_blank"
                 onClick={(e) => {
                   e.preventDefault();
-                  states.showAccount = '@hahzcandy';
+                  states.showAccount = 'cheeaun@mastodon.social';
                 }}
               >
-                @hahzcandy
+                @cheeaun
               </a>
             </div>
           </div>
           <p>
             <a
-              href="https://github.com/blkluv/phanpy/blob/main/PRIVACY.MD"
+              href="https://github.com/cheeaun/phanpy/blob/main/PRIVACY.MD"
               target="_blank"
             >
               Privacy Policy
@@ -459,7 +459,7 @@ function Settings({ onClose }) {
                 <>
                   (
                   <a
-                    href={`https://github.com/blkluv/phanpy/commit/${__COMMIT_HASH__}`}
+                    href={`https://github.com/cheeaun/phanpy/commit/${__COMMIT_HASH__}`}
                     target="_blank"
                   >
                     <code>{__COMMIT_HASH__}</code>

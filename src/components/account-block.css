@@ -18,7 +18,7 @@
 }
 .account-block .short-desc,
 .account-block .short-desc > * {
-  display: flex;
+  display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;

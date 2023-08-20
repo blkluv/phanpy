@@ -224,13 +224,12 @@
 }
 .status.compact-thread .content-compact {
   overflow: hidden;
-  display: flex;
-  /* Remove the following lines */
-  /* display: box;
+  display: -webkit-box;
+  display: box;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-clamp: 2; */
+  line-clamp: 2;
   font-size: 90%;
 }
 
@@ -872,7 +871,7 @@ body:has(#modal-container .carousel) .status .media img:hover {
   max-width: 100%;
 }
 .status:not(.large) .hashtag-stuffing:first-child {
-  display: flex;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   white-space: normal;
@@ -906,13 +905,12 @@ body:has(#modal-container .carousel) .status .media img:hover {
 .carousel-item button.media-alt .media-alt-desc {
   overflow: hidden;
   white-space: normal;
-  display: flex;
-  /* Remove the following lines */
-  /* display: box;
+  display: -webkit-box;
+  display: box;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-clamp: 2; */
+  line-clamp: 2;
   line-height: 1.4;
 }
 .carousel-item button.media-alt[hidden] {
@@ -1015,14 +1013,12 @@ a:focus-visible .card img {
   font-weight: normal;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap; /* Add this line to prevent the text from wrapping */
-  display: flex;
-  /* Remove the following lines */
-  /* display: box;
+  display: -webkit-box;
+  display: box;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-clamp: 2; */
+  line-clamp: 2;
 }
 .card .meta {
   font-size: smaller;
@@ -1030,14 +1026,12 @@ a:focus-visible .card img {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap; /* Add this line to prevent the text from wrapping */
-  display: flex;
-  /* Remove the following lines */
-  /* display: box;
+  display: -webkit-box;
+  display: box;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
-  line-clamp: 2; */
+  line-clamp: 2;
 }
 .card.no-image :is(.title, .meta) {
   -webkit-line-clamp: 3;
