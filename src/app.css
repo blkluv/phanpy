@@ -1563,7 +1563,7 @@ body > .szh-menu-container {
 }
 .szh-menu .menu-double-lines {
   white-space: normal !important;
-  display: -webkit-box;
+  display: flex;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden !important;

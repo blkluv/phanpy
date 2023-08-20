@@ -1,42 +1,34 @@
-body.cloak,
-.cloak {
-  a {
-    text-decoration-color: var(--link-color);
-  }
-
-  .name-text,
-  .name-text *,
-  .status .content-container,
-  .status .content-container *,
-  .status .content-compact,
-  .account-container :is(header, main > *:not(.actions)),
-  .account-container :is(header, main > *:not(.actions)) *,
-  .header-account,
-  .account-block {
-    text-decoration-thickness: 1.1em;
-    text-decoration-line: line-through;
-    text-rendering: optimizeSpeed;
-    filter: opacity(0.5);
-  }
-  .name-text *,
-  .status .content-container *,
-  .account-container :is(header, main > *:not(.actions)) * {
-    filter: none;
-  }
-
-  .status :is(img, video, audio),
-  .avatar,
-  .emoji,
-  .header-banner {
-    filter: contrast(0) !important;
-    background-color: #000 !important;
-  }
+/* Apply common properties to multiple selectors */
+.cloak,
+.cloak a,
+.cloak .name-text,
+.cloak .name-text *,
+.cloak .status .content-container,
+.cloak .status .content-compact,
+.cloak .account-container:not(:is(header, main > *:not(.actions))),
+.cloak .header-account,
+.cloak .account-block {
+  /* Common properties */
+  text-decoration-color: var(--link-color);
+  text-decoration-thickness: 1.1em;
+  text-decoration-line: line-through;
+  text-rendering: optimizeSpeed;
+  filter: opacity(0.5);
 }
 
-/* SPECIAL CASES */
+/* Apply different properties to specific selectors */
+.cloak .name-text *,
+.cloak .status .content-container * {
+  /* Different properties for specific selectors */
+  filter: none;
+}
 
-@supports (display: -webkit-box) {
-  body.cloak .card :is(.title, .meta) {
-    background-color: var(--text-color) !important;
-  }
+/* Apply different properties to other selectors */
+.cloak .status :is(img, video, audio),
+.cloak .avatar,
+.cloak .emoji,
+.cloak .header-banner {
+  /* Different properties for other selectors */
+  filter: contrast(0) !important;
+  background-color: #000 !important;
 }

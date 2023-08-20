@@ -90,7 +90,7 @@
   opacity: 0.75;
   padding-top: 0.75em;
   border-top: var(--hairline-width) solid var(--outline-color);
-  display: -webkit-box;
+  display: flex;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;

@@ -137,152 +137,124 @@ function AccountInfo({
         <>
           <header>
             <AccountBlock avatarSize="xxxl" skeleton />
-          </header>
-          <main>
-            <div class="note">
-              <p>████████ ███████</p>
-              <p>███████████████ ███████████████</p>
-            </div>
-            <p class="stats">
-<<<<<<< HEAD
-              <span>
-                Posts
-                <br />
-                ██
-              </span>
-              <span>
-                United
-                <br />
-                ██
-              </span>
-              <span>
-                Tribe
-                <br />
-                ██
-              </span>
-=======
-              <div>
-                <span>██</span> Followers
-              </div>
-              <div>
-                <span>██</span> Following
-              </div>
-              <div>
-                <span>██</span> Posts
-              </div>
-              <div>Joined ██</div>
->>>>>>> aede10d71e4fde5fa196f8a3d1437052ea1996af
-            </p>
-          </main>
-        </>
-      ) : (
-        info && (
-          <>
-            {header && !/missing\.png$/.test(header) && (
-              <img
-                src={header}
-                alt=""
-                class={`header-banner ${
-                  headerIsAvatar ? 'header-is-avatar' : ''
-                }`}
-                onError={(e) => {
-                  if (e.target.crossOrigin) {
-                    if (e.target.src !== headerStatic) {
-                      e.target.src = headerStatic;
-                    } else {
-                      e.target.removeAttribute('crossorigin');
-                      e.target.src = header;
-                    }
-                  } else if (e.target.src !== headerStatic) {
-                    e.target.src = headerStatic;
-                  } else {
-                    e.target.remove();
-                  }
-                }}
-                crossOrigin="anonymous"
-                onLoad={(e) => {
-                  e.target.classList.add('loaded');
-                  try {
-                    // Get color from four corners of image
-                    const canvas = document.createElement('canvas');
-                    const ctx = canvas.getContext('2d');
-                    canvas.width = e.target.width;
-                    canvas.height = e.target.height;
-                    ctx.drawImage(e.target, 0, 0);
-                    // const colors = [
-                    //   ctx.getImageData(0, 0, 1, 1).data,
-                    //   ctx.getImageData(e.target.width - 1, 0, 1, 1).data,
-                    //   ctx.getImageData(0, e.target.height - 1, 1, 1).data,
-                    //   ctx.getImageData(
-                    //     e.target.width - 1,
-                    //     e.target.height - 1,
-                    //     1,
-                    //     1,
-                    //   ).data,
-                    // ];
-                    // Get 10x10 pixels from corners, get average color from each
-                    const pixelDimension = 10;
-                    const colors = [
-                      ctx.getImageData(0, 0, pixelDimension, pixelDimension)
-                        .data,
-                      ctx.getImageData(
-                        e.target.width - pixelDimension,
-                        0,
-                        pixelDimension,
-                        pixelDimension,
-                      ).data,
-                      ctx.getImageData(
-                        0,
-                        e.target.height - pixelDimension,
-                        pixelDimension,
-                        pixelDimension,
-                      ).data,
-                      ctx.getImageData(
-                        e.target.width - pixelDimension,
-                        e.target.height - pixelDimension,
-                        pixelDimension,
-                        pixelDimension,
-                      ).data,
-                    ].map((data) => {
-                      let r = 0;
-                      let g = 0;
-                      let b = 0;
-                      let a = 0;
-                      for (let i = 0; i < data.length; i += 4) {
-                        r += data[i];
-                        g += data[i + 1];
-                        b += data[i + 2];
-                        a += data[i + 3];
-                      }
-                      const dataLength = data.length / 4;
-                      return [
-                        r / dataLength,
-                        g / dataLength,
-                        b / dataLength,
-                        a / dataLength,
-                      ];
-                    });
-                    const rgbColors = colors.map((color) => {
-                      const [r, g, b, a] = lightenRGB(color);
-                      return `rgba(${r}, ${g}, ${b}, ${a})`;
-                    });
-                    setHeaderCornerColors(rgbColors);
-                    console.log({ colors, rgbColors });
-                  } catch (e) {
-                    // Silently fail
-                  }
-                }}
-              />
-            )}
-            <header>
-              <AccountBlock
-                account={info}
-                instance={instance}
-                avatarSize="xxxl"
-                external={standalone}
-                internal={!standalone}
-              />
             </header>
+            <main>
+  <div class="note">
+    <p>████████ ███████</p>
+    <p>███████████████ ███████████████</p>
+  </div>
+  <div class="stats">
+    <div>
+      <span>██</span> Tribe
+    </div>
+    <div>
+      <span>██</span> United
+    </div>
+    <div>
+      <span>██</span> Posts
+    </div>
+    <div>Joined ██</div>
+  </div>
+</main>
+</>
+) : (
+info && (
+<>
+{header && !/missing\.png$/.test(header) && (
+<img
+  src={header}
+  alt=""
+  class={`header-banner ${
+    headerIsAvatar ? 'header-is-avatar' : ''
+  }`}
+  onError={(e) => {
+    if (e.target.crossOrigin) {
+      if (e.target.src !== headerStatic) {
+        e.target.src = headerStatic;
+      } else {
+        e.target.removeAttribute('crossorigin');
+        e.target.src = header;
+      }
+    } else if (e.target.src !== headerStatic) {
+      e.target.src = headerStatic;
+    } else {
+      e.target.remove();
+    }
+  }}
+  crossOrigin="anonymous"
+  onLoad={(e) => {
+    e.target.classList.add('loaded');
+    try {
+      // Get color from four corners of image
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = e.target.width;
+      canvas.height = e.target.height;
+      ctx.drawImage(e.target, 0, 0);
+      // Get 10x10 pixels from corners, get average color from each
+      const pixelDimension = 10;
+      const colors = [
+        ctx.getImageData(0, 0, pixelDimension, pixelDimension)
+          .data,
+        ctx.getImageData(
+          e.target.width - pixelDimension,
+          0,
+          pixelDimension,
+          pixelDimension,
+        ).data,
+        ctx.getImageData(
+          0,
+          e.target.height - pixelDimension,
+          pixelDimension,
+          pixelDimension,
+        ).data,
+        ctx.getImageData(
+          e.target.width - pixelDimension,
+          e.target.height - pixelDimension,
+          pixelDimension,
+          pixelDimension,
+        ).data,
+      ].map((data) => {
+        let r = 0;
+        let g = 0;
+        let b = 0;
+        let a = 0;
+        for (let i = 0; i < data.length; i += 4) {
+          r += data[i];
+          g += data[i + 1];
+          b += data[i + 2];
+          a += data[i + 3];
+        }
+        const dataLength = data.length / 4;
+        return [
+          r / dataLength,
+          g / dataLength,
+          b / dataLength,
+          a / dataLength,
+        ];
+      });
+      const rgbColors = colors.map((color) => {
+        const [r, g, b, a] = lightenRGB(color);
+        return `rgba(${r}, ${g}, ${b}, ${a})`;
+      });
+      setHeaderCornerColors(rgbColors);
+      console.log({ colors, rgbColors });
+    } catch (e) {
+      // Silently fail
+    }
+  }}
+/>
+)}
+<header>
+  <AccountBlock
+    account={info}
+    instance={instance}
+    avatarSize="xxxl"
+    external={standalone}
+    internal={!standalone}
+  />
+</header>
+
             <main tabIndex="-1">
               {bot && (
                 <>
