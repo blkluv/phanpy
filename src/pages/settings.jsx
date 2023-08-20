@@ -415,37 +415,37 @@ function Settings({ onClose }) {
               }}
             />
             <div>
-              <b>Phanpy</b>{' '}
+              <b>Hahz</b>{' '}
               <a
-                href="https://hachyderm.io/@phanpy"
+                href="https://universeodon.com/@hahz"
                 // target="_blank"
                 onClick={(e) => {
                   e.preventDefault();
-                  states.showAccount = 'phanpy@hachyderm.io';
+                  states.showAccount = 'hahz5d@pm.me';
                 }}
               >
-                @phanpy
+                @hahz
               </a>
               <br />
-              <a href="https://github.com/cheeaun/phanpy" target="_blank">
-                Built
+              <a href="https://luvnft.com" target="_blank">
+                Made
               </a>{' '}
-              by{' '}
+              with{' '}
               <a
-                href="https://mastodon.social/@cheeaun"
+                href="https://universeodon.com/@luv"
                 // target="_blank"
                 onClick={(e) => {
                   e.preventDefault();
                   states.showAccount = 'cheeaun@mastodon.social';
                 }}
               >
-                @cheeaun
+                @luv
               </a>
             </div>
           </div>
           <p>
             <a
-              href="https://github.com/cheeaun/phanpy/blob/main/PRIVACY.MD"
+              href="https://github.com/blkluv/phanpy/blob/main/PRIVACY.MD"
               target="_blank"
             >
               Privacy Policy

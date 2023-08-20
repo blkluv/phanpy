@@ -9,6 +9,7 @@ import { api } from '../utils/api';
 import safeBoundingBoxPadding from '../utils/safe-bounding-box-padding';
 import states from '../utils/states';
 import store from '../utils/store';
+import { Link } from 'react-router-dom';
 
 import Avatar from './avatar';
 import Icon from './icon';
@@ -164,13 +165,13 @@ function NavMenu(props) {
                 <Icon icon="list" size="l" /> <span>Lists</span>
               </MenuLink>
               <MenuLink to="/ft">
-                <Icon icon="hashtag" size="l" /> <span>Followed Hashtags</span>
+                <Icon icon="hashtag" size="l" /> <span>Hashtags I Luv</span>
               </MenuLink>
               <MenuLink to="/b">
                 <Icon icon="bookmark" size="l" /> <span>Bookmarks</span>
               </MenuLink>
               <MenuLink to="/f">
-                <Icon icon="heart" size="l" /> <span>Favourites</span>
+                <Icon icon="heart" size="l" /> <span>Luvs</span>
               </MenuLink>
             </>
           )}
@@ -182,7 +183,7 @@ function NavMenu(props) {
             <Icon icon="group" size="l" /> <span>Local</span>
           </MenuLink>
           <MenuLink to={`/${instance}/p`}>
-            <Icon icon="earth" size="l" /> <span>Federated</span>
+            <Icon icon="earth" size="l" /> <span>Earth</span>
           </MenuLink>
           <MenuLink to={`/${instance}/trending`}>
             <Icon icon="chart" size="l" /> <span>Trending</span>
@@ -218,6 +219,33 @@ function NavMenu(props) {
                 }}
               >
                 <Icon icon="gear" size="l" /> <span>Settings&hellip;</span>
+              </MenuItem>
+              <MenuItem>
+              <Link
+                to="https://luvr.luvnft.com" // Replace with your external URL
+                target="_blank"          // Opens the link in a new tab
+                rel="noopener noreferrer" // Security best practice for opening in a new tab
+                >
+              <Icon icon="luvr" size="l" /> <span>#😍🤜🏽🤛🏻 LUVR</span>
+              </Link>
+              </MenuItem>
+              <MenuItem>
+              <Link
+                to="https://verified.luvnft.com" // Replace with your external URL
+                target="_blank"          // Opens the link in a new tab
+                rel="noopener noreferrer" // Security best practice for opening in a new tab
+                >
+              <Icon icon="luvr" size="l" /> <span>#🔵✔️💙 Verified</span>
+              </Link>
+              </MenuItem>
+              <MenuItem>
+              <Link
+                to="https://coc.luvnft.com" // Replace with your external URL
+                target="_blank"          // Opens the link in a new tab
+                rel="noopener noreferrer" // Security best practice for opening in a new tab
+                >
+              <Icon icon="luvr" size="l" /> <span>#🟪🟨⬜️ Unity ID</span>
+              </Link>
               </MenuItem>
             </>
           ) : (
