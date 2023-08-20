@@ -224,28 +224,35 @@ function NavMenu(props) {
               window.open('https://hq.decent.xyz/137/Editions/0x6Ea2431636B7fB013C995cF846a9C761e535644B', '_blank'); // Replace with your external link URL
             }}
           >
-            <span><Emoji text="❤️" />LUVR NFT</span>
+            <span><Emoji text="#😍❤️💬" />LUVR</span>
           </MenuItem>
           <MenuItem
             onClick={() => {
               window.open('https://verified.luvnft.com/', '_blank'); // Replace with your external link URL
             }}
           >
-            <span><Emoji text="🔵" />Blue Check</span>
+            <span><Emoji text="#🔵✔️💙" />Blue Check</span>
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              window.open('https://verified.luvnft.com/', '_blank'); // Replace with your external link URL
+            }}
+          >
+            <span><Emoji text="#🟧☮️🆔" />Unity ID</span>
           </MenuItem>
           <MenuItem
             onClick={() => {
               window.open('https://emojitarot.luvnft.com/', '_blank'); // Replace with your external link URL
             }}
           >
-            <span><Emoji text="🃏" />Emoji Tarot</span>
+            <span><Emoji text="#🃏🪬🔮" />Emoji Tarot</span>
           </MenuItem>
           <MenuItem
             onClick={() => {
               window.open('https://cats.luvnft.com/', '_blank'); // Replace with your external link URL
             }}
           >
-            <span><Emoji text="😻" />Adopt Cats</span>
+            <span><Emoji text="#😻🥷🏼🏠" />Adopt Cats</span>
           </MenuItem>
             </>
           ) : (

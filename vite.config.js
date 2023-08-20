@@ -108,5 +108,10 @@ export default defineConfig({
         },
       },
     },
+    rollupOptions: {
+      external: [
+        'next/image', // Add next/image to the list of external dependencies
+      ],
+    },
   },
 });

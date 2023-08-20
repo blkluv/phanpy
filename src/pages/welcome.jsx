@@ -42,32 +42,10 @@ function Welcome() {
             </b>
           </big>
         </p>
-        <p className="desc">A positive vibes only social media platform.</p>
+        <p className="desc">A positive vibes only social media play-to-earn tokenopoly game.</p>
       </div>
       <div id="why-container">
         <div className="sections">
-          <section>
-            <img
-              src={luvr}
-              alt="id"
-              loading="lazy"
-            />
-            <h4>LUVR</h4>
-            <p>
-              Your LUV NFT tribe 🆔 (<a href="https://luvr.luvnft.com">Claim it</a>)
-            </p>
-          </section>
-          <section>
-            <img
-              src={blue}
-              alt="blue"
-              loading="lazy"
-            />
-            <h4>Verified</h4>
-            <p>
-              Your verified Blue Check 🔵 (<a href="https://verified.luvnft.com">Claim it</a>)
-            </p>
-          </section>
           <section>
             <img
               src={boostsCarouselUrl}

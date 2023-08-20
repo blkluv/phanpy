@@ -88,7 +88,7 @@ function Login() {
       <form onSubmit={onSubmit}>
         <h1>Log in</h1>
         <label>
-          <p>Instance</p>
+          <p>[universeodon.com] Instance</p>
           <input
             value={instanceText}
             required
@@ -138,7 +138,7 @@ function Login() {
         )}
         <div>
           <button class="large" disabled={uiState === 'loading'}>
-            Log in
+            Log in and follow @luv
           </button>{' '}
         </div>
         <Loader hidden={uiState !== 'loading'} />
