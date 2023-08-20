@@ -7,7 +7,7 @@ Phanpy
 **Minimalistic opinionated Mastodon web client.**
 </div>
 
-<br>
+![Fancy screenshot](readme-assets/fancy-screenshot.jpg)
 
 **🗣️ Pronunciation**: [`/fænpi/`](https://ythi.net/how-do-you-pronounce/phanpy/english/) ([`FAN-pee`](https://www.smogon.com/forums/threads/the-official-name-pronunciation-guide.3474941/)) [🔊 Listen](https://www.youtube.com/watch?v=DIUbWe-ysJI)
 
@@ -73,6 +73,18 @@ Everything is designed and engineered following my taste and vision. This is a p
 - If root post is found, badge will show the index number of the post in the thread.
 - Limit up to 3 API requests as the root post may be very old or the thread is super long.
 - If index number couldn't be found, badge will fallback to showing `Thread` without the number.
+
+### Hashtag stuffing collapsing
+
+![Hashtag stuffing collapsing](readme-assets/hashtag-stuffing-collapsing.jpg)
+
+- First paragraph of post content with more than 3 hashtags will be collapsed to max 3 lines.
+- Subsequent paragraphs after first paragraph with more than 3 hashtags will be collapsed to 1 line.
+- Adjacent paragraphs with more than 1 hashtag after collapsed paragraphs will be collapsed to 1 line.
+- If there are text around or between the hashtags, they will not be collapsed.
+- Collapsed hashtags will be appended with `...` at the end.
+- They are also slightly faded out to reduce visual noise.
+- Opening the post view will reveal the hashtags uncollapsed.
 
 ### Filtered posts
 
