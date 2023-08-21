@@ -145,8 +145,9 @@ function Login() {
         <hr />
         <p>
           <a href="https://joinmastodon.org/servers" target="_blank">
-            Don't have an account? Create one! Join universodon.com instance and follow @luv
+            Don't have an account? Create one! 
           </a>
+          Join universeodon.com instance and follow @luv
         </p>
         <p>
           <Link to="/">Go home</Link>
