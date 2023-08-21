@@ -38,7 +38,8 @@ function Welcome() {
             </b>
           </big>
         </p>
-        <p class="desc">A positive vibes only social media donate-to-earn tokenopoly game. </p>
+        <p class="desc">A positive vibes only social media donate-to-earn tokenopoly game. Learn more <b><a href="https://app.charmverse.io/luv-nft/getting-started">here.</a></b>
+here</p>
       </div>
       <div id="why-container">
         <div class="sections">
