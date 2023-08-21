@@ -99,23 +99,23 @@ function Welcome() {
       </div>
       <hr />
       <p>
-        <a href="https://github.com/cheeaun/phanpy" target="_blank">
-          Built
+        <a href="https://github.com/blkluv/phanpy" target="_blank">
+          Made
         </a>{' '}
-        by{' '}
+        with{' '}
         <a
-          href="https://mastodon.social/@cheeaun"
+          href="https://universeodon.com/@luv"
           target="_blank"
           onClick={(e) => {
             e.preventDefault();
-            states.showAccount = 'cheeaun@mastodon.social';
+            states.showAccount = 'luv@universeodon.com';
           }}
         >
-          @cheeaun
+          @luv
         </a>
         .{' '}
         <a
-          href="https://github.com/cheeaun/phanpy/blob/main/PRIVACY.MD"
+          href="https://github.com/blkluv/phanpy/blob/main/PRIVACY.MD"
           target="_blank"
         >
           Privacy Policy
