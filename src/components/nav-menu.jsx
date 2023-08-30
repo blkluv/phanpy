@@ -235,7 +235,7 @@ function NavMenu(props) {
                 target="_blank"          // Opens the link in a new tab
                 rel="noopener noreferrer" // Security best practice for opening in a new tab
                 >
-              <Icon icon="luvr" size="l" /> <span>#🔵✔️💙 Verified</span>
+              <Icon icon="verified" size="l" /> <span>#🔵✔️💙 Verified</span>
               </Link>
               </MenuItem>
               <MenuItem>
@@ -244,7 +244,16 @@ function NavMenu(props) {
                 target="_blank"          // Opens the link in a new tab
                 rel="noopener noreferrer" // Security best practice for opening in a new tab
                 >
-              <Icon icon="luvr" size="l" /> <span>#🟪🟨⬜️ Unity ID</span>
+              <Icon icon="coc" size="l" /> <span>#🟪🟨⬜️ Unity ID</span>
+              </Link>
+              </MenuItem>
+              <MenuItem>
+              <Link
+                to="https://tip.luvnft.com" // Replace with your external URL
+                target="_blank"          // Opens the link in a new tab
+                rel="noopener noreferrer" // Security best practice for opening in a new tab
+                >
+              <Icon icon="tip" size="l" /> <span>#💲🤑🫶 Send TIP$</span>
               </Link>
               </MenuItem>
             </>
